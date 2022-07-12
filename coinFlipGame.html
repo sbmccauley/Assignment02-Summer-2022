@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2:  The Coin Flip Game</title>
+    <script>
+        let coinFlip = Math.round(Math.random());
+        console.log(coinFlip);
+        let choice = prompt('Choose heads or tails');
+        if(coinFlip) { //coinFlip = 1 (true)
+        if(choice == 'heads') {
+            alert('The flip was heads, you chose heads...you WIN!!!');             
+            } else {
+                alert('The flip was heads, you chose tails... you LOSE!');
+                }
+        } else { //coinFlip = 0 (false)
+            if(choice == 'heads') {
+                alert('The flip was tails, but you chose heads...you lose!');
+            } else {
+                alert('The flip was tails, you chose tails...you WIN!');
+                }
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Heads or Tails</h1>
+</body>
+</html>
